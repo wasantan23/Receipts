@@ -6,13 +6,13 @@ public class Kiosk {
 	public static void main (String [] args) { 
 		
 		Scanner Items = new Scanner (System.in); 
-		
+		// Printer Myprinter = new Printer (); 
 
 			int pizza = 5;
-			int chips = 1;
+			double chips = 1.50;
 			int coke = 2;
-			int sandwich = 3;
-			int cereal = 6;
+			double sandwich = 3.20;
+			double cereal = 6.50;
 			int price = 0; 
 			double tax = 0;
 			int totalItems = 0;
@@ -39,7 +39,7 @@ public class Kiosk {
 					System.out.println("How many bags of chips would you like to buy?");
 					String secondItem = Items.nextLine();
 					int secondItemNum = Integer.parseInt(secondItem);
-					int secondItemPrice = secondItemNum * 1;
+					int secondItemPrice = secondItemNum * 1.50;
 					totalItems += secondItemNum;
 					System.out.println("How many cans of coke would you like to buy? ");
 					String thirdItem = Items.nextLine();
@@ -49,23 +49,38 @@ public class Kiosk {
 					System.out.println("How many sandwiches would you like to buy??");
 					String fourthItem = Items.nextLine();
 					int fourthItemNum = Integer.parseInt(fourthItem);
-					int fourthItemPrice = fourthItemNum * 3;
+					int fourthItemPrice = fourthItemNum * 3.20;
 					totalItems += fourthItemNum;
 					System.out.println("How many boxes of cereal would you like to buy?");
 					String fifthItem = Items.nextLine();
 					int fifthItemNum = Integer.parseInt(fourthItem);
-					int fifthItemPrice = fifthItemNum * 6;
+					int fifthItemPrice = fifthItemNum * 6.50;
 					totalItems += fifthItemPrice;
 				}
 				}
+				
+				// make qty for item, description and total price
+				//p1.print (int quantity, str 
 				
 				System.out.print("Thanks for shopping!");
 				
 			}
 		}
 		
+		
+		/* if (firstItemNum > 0) {
+		}
+		
+		else if (secondItemNum > 0) {
+		}
+			
+		else if (thirdItemNum > 0) {
+		}
+			
+		else if (fourthItemNum > 0) {
+		}
+			
+		else if (fifthItemNum > 0) {
+		}
+	/*
 	
-	
-				
-
-				
