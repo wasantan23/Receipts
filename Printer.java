@@ -1,15 +1,13 @@
 //Tanisha Wasan 
-public class Printer {
-  
-  Checkout myCheckout = newCheckout();
-  
-  int lengthFirstItem = firstItem.length();
-  int lengthSecondItem = secondItem.length();
-  int lengthThirdItem = thirdItem.length(); 
-  
-}
+
+public class Printer () {
 
 
+public void printHeader () {
+	//Sysrem.out.println("Welcome to Kroger!!"
+	
+public void print (int totalItems . String name , double Price)
+//Systsem.out.println( " " + qty + " " + dose + );
 
 
 
