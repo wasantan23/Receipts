@@ -1,3 +1,18 @@
+//Tanisha Wasan 
+public class Printer {
+  
+  Checkout myCheckout = newCheckout();
+  
+  int lengthFirstItem = firstItem.length();
+  int lengthSecondItem = secondItem.length();
+  int lengthThirdItem = thirdItem.length(); 
+  
+}
+
+
+
+
+
 //Printer.java
 
 /* This is a java file 'stub' or piece of a file designed to get you started on 
