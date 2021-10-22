@@ -25,7 +25,7 @@ public class Kiosk { // public class
 			
 		} //closes the constructor
 			public void shopping() {
-				while (totalItems <= &* shop.equals("Y")||("y")) { //while loop 
+				while (totalItems <= 5 &&shop.equals("Y")||("y")) { //while loop 
 					System.out.println("Type out the first item you would like to buy.");
 					String firstItem = Items.nextLine();
 					System.out.println("Would you like to keep shopping?");
