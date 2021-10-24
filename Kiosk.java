@@ -1,86 +1,94 @@
+
+   
 //Tanisha Wasan
 import java.util.Scanner; 
 
 public class Kiosk {
 	
-	public static void main (String [] args) { 
+	public static void main (String [] args) { //main class
 		
-		Scanner Items = new Scanner (System.in); 
-		// Printer Myprinter = new Printer (); 
+		Scanner Items = new Scanner (System.in); //scanner  
+		Printer Myprinter = new Printer (); // printer class object is created
 
-			int pizza = 5;
+			double pizza = 5; //variables
 			double chips = 1.50;
-			int coke = 2;
-			double sandwich = 3.20;
-			double cereal = 6.50;
-			int price = 0; 
-			double tax = 0;
-			int totalItems = 0;
+			double coke = 2;
+			double sandwich = 3.5;
+			double cereal = 6;
+			int firstItem = 0, secondItem = 0, thirdItem = 0 , fourthItem = 0 , fifthItem = 0;
 			
-			System.out.println("Welcome to the kiosk! We are selling 5 items."); 
+			
+			System.out.println("Welcome to the kiosk! We are selling 5 items.");  //lines 23 - 29 - menu and introduction display for user
 			System.out.println("Pizza for $ 5");
-			System.out.println("Chips for $1");
+			System.out.println("Chips for $1.50");
 			System.out.println("Coke for $2");
-			System.out.println("Sandwich for $3");
-			System.out.println("Cereal for $6");
+			System.out.println("Sandwich for $3.5");
+			System.out.println("Cereal for $6.");
 			System.out.println("Would you like to shop? Type 'Y' to shop and 'N' to exist.");
 			
 			String shop = Items.nextLine();
 			
 		
 		
-				while (totalItems <= 9) { 
-				if (shop.equals("Y")|| shop.equals("y")) {
-					System.out.println("How many slices of pizza would you like to buy?");
-					String firstItem = Items.nextLine();
-					int firstItemNum = Integer.parseInt(firstItem);
-					int firstItemPrice = firstItemNum * 5; 
-					totalItems += firstItemNum;
-					System.out.println("How many bags of chips would you like to buy?");
-					String secondItem = Items.nextLine();
-					int secondItemNum = Integer.parseInt(secondItem);
-					int secondItemPrice = secondItemNum * 1.50;
-					totalItems += secondItemNum;
-					System.out.println("How many cans of coke would you like to buy? ");
-					String thirdItem = Items.nextLine();
-					int thirdItemNum = Integer.parseInt(thirdItem);
-					int thirdItemPrice = thirdItemNum * 2;
-					totalItems += thirdItemNum;
-					System.out.println("How many sandwiches would you like to buy??");
-					String fourthItem = Items.nextLine();
-					int fourthItemNum = Integer.parseInt(fourthItem);
-					int fourthItemPrice = fourthItemNum * 3.20;
-					totalItems += fourthItemNum;
-					System.out.println("How many boxes of cereal would you like to buy?");
-					String fifthItem = Items.nextLine();
-					int fifthItemNum = Integer.parseInt(fourthItem);
-					int fifthItemPrice = fifthItemNum * 6.50;
-					totalItems += fifthItemPrice;
+				
+				if (shop.equals("Y")|| shop.equals("y")) { //checks if the user wants to shop
+					System.out.println("How many slices of pizza would you like to buy? You can't have more than 9 of an item.");
+					firstItem = Items.nextInt(); //scans the user input
+					while (firstItem > 9) { //checks if the user inputed more than 9 items
+						System.out.println("How many slices of pizza would you like to buy? You can't have more than 9 of an item."); //reasks the question if the user inputs more than 9 items
+						 firstItem = Items.nextInt(); 
+					}
+					
+						
+					
+					System.out.println("How many bags of chips would you like to buy? You can't have more than 9 of an item.");
+					secondItem = Items.nextInt();
+					while (secondItem > 9) {
+						
+					System.out.println("How many bags of chips would you like to buy? You can't have more than 9 of an item.");
+					secondItem = Items.nextInt();
+					}
+					
+					
+					System.out.println("How many cans of coke would you like to buy? You can't have more than 9 of an item. ");
+					thirdItem = Items.nextInt();
+					while (thirdItem > 9) {
+					System.out.println("How many cans of coke would you like to buy? You can't have more than 9 of an item. ");
+					thirdItem = Items.nextInt();
+					}
+					
+					
+					System.out.println("How many sandwiches would you like to buy? You can't have more than 9 of an item.");
+					fourthItem = Items.nextInt();
+					while (fourthItem > 9) {
+					System.out.println("How many sandwiches would you like to buy? You can't have more than 9 of an item.");
+					fourthItem = Items.nextInt();
+					}
+
+					System.out.println("How many boxes of cereal would you like to buy? You can't have more than 9 of an item.");
+					fifthItem = Items.nextInt();
+					while (fifthItem > 9) {
+					System.out.println("How many boxes of cereal would you like to buy? You can't have more than 9 of an item.");
+					fifthItem = Items.nextInt();
+					}
+					
+				
 				}
+				else {
+					System.out.println("Thanks for shopping"); //if the if statement does not run it will turn to this
 				}
 				
-				// make qty for item, description and total price
-				//p1.print (int quantity, str 
+				Myprinter.printReciept(firstItem, secondItem, thirdItem, fourthItem, fifthItem); //calling the method from printer class
+			} //closes the main method
+		} //closes the class
 				
-				System.out.print("Thanks for shopping!");
+			
 				
-			}
-		}
+				
+			
 		
 		
-		/* if (firstItemNum > 0) {
-		}
-		
-		else if (secondItemNum > 0) {
-		}
-			
-		else if (thirdItemNum > 0) {
-		}
-			
-		else if (fourthItemNum > 0) {
-		}
-			
-		else if (fifthItemNum > 0) {
-		}
-	/*
 	
+	
+				
+
