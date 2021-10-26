@@ -10,9 +10,9 @@ public void printReceipt(int firstItem, int secondItem, int thirdItem, int fourt
 		double firstItemPrice = firstItem* 5;  //multiplying the number of pizzas by 5, the assigned price of pizza
 		price += firstItemPrice; // adding the price of the first item to the sub total
 		System.out.println("Tanisha's Shop Receipt");
-		System.out.println("****************************************");
+		System.out.println("****************************************"); // start of the reciept
 		System.out.println("QTY" + "\t ITEM \t \t " + "      PRICE"); //up top header 
-		System.out.println(firstItem + "\t Pizza                 " + (String.format( "$%8.2f", firstItemPrice))); //tab is 4 spaces
+		System.out.println(firstItem + "\t Pizza                 " + (String.format( "$%8.2f", firstItemPrice))); //the 8 aligns the decimal point and the %.3f rounds the number to two decimal points
 		
 	}
 	if (secondItem > 0) { //checking if the user inputed more than one packet of chips
@@ -28,7 +28,7 @@ public void printReceipt(int firstItem, int secondItem, int thirdItem, int fourt
 	if (fourthItem > 0) { //checking if the user inputed more than one sandwich
 		double fourthItemPrice = fourthItem * 3.5; //multiplying the number of sandwiches by 2.5, the assigned price of sandwiches
 		price += fourthItemPrice; // adding the price of the fourth item to the sub total
-		System.out.println(fourthItem + "\t Sandwich              " + (String.format( "$%8.2f", fourthItemPrice)));
+		System.out.println(fourthItem + "\t Sandwich              " + (String.format( "$%8.2f", fourthItemPrice))); 
 	}
 	if (fifthItem > 0) { //checking if the user inputed more than one packet of cereal
 		double fifthItemPrice = fifthItem * 6; //multiplying the number of packets by 6 the assigned price of cereal
@@ -45,4 +45,3 @@ public void printReceipt(int firstItem, int secondItem, int thirdItem, int fourt
 		System.out.println("****************************************"); //  End of reciept
 } //closes the method
 } //closes the class
-
