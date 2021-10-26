@@ -76,9 +76,12 @@ public class Kiosk {
 					System.out.println("Thanks for shopping"); //if the if statement does not run it will turn to this
 				}
 				
-				Myprinter.printReciept(firstItem, secondItem, thirdItem, fourthItem, fifthItem); //calling the method from printer class
+				Myprinter.printReceipt(firstItem, secondItem, thirdItem, fourthItem, fifthItem); //calling the method from printer class
 			} //closes the main method
 		} //closes the class
+
+			
+		
 
 			
 		
