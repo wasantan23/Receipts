@@ -1,5 +1,3 @@
-
-   
 //Tanisha Wasan
 import java.util.Scanner; 
 
@@ -41,7 +39,7 @@ public class Kiosk {
 					
 						
 					
-					System.out.println("How many bags of chips would you like to buy? You can't have more than 9 of an item.");
+					System.out.println("How many bags of chips would you like to buy? You can't have more than 9 of an item."); // checks if the user wants to buy chips
 					secondItem = Items.nextInt();
 					while (secondItem > 9) {
 						
@@ -50,7 +48,7 @@ public class Kiosk {
 					}
 					
 					
-					System.out.println("How many cans of coke would you like to buy? You can't have more than 9 of an item. ");
+					System.out.println("How many cans of coke would you like to buy? You can't have more than 9 of an item. ");// checks if the user wants to buy cans of coke
 					thirdItem = Items.nextInt();
 					while (thirdItem > 9) {
 					System.out.println("How many cans of coke would you like to buy? You can't have more than 9 of an item. ");
@@ -58,14 +56,14 @@ public class Kiosk {
 					}
 					
 					
-					System.out.println("How many sandwiches would you like to buy? You can't have more than 9 of an item.");
+					System.out.println("How many sandwiches would you like to buy? You can't have more than 9 of an item."); // checks if the user wants to buy sandwiches 
 					fourthItem = Items.nextInt();
 					while (fourthItem > 9) {
 					System.out.println("How many sandwiches would you like to buy? You can't have more than 9 of an item.");
 					fourthItem = Items.nextInt();
 					}
 
-					System.out.println("How many boxes of cereal would you like to buy? You can't have more than 9 of an item.");
+					System.out.println("How many boxes of cereal would you like to buy? You can't have more than 9 of an item."); // checks if the user wants to buy cereal
 					fifthItem = Items.nextInt();
 					while (fifthItem > 9) {
 					System.out.println("How many boxes of cereal would you like to buy? You can't have more than 9 of an item.");
@@ -81,10 +79,7 @@ public class Kiosk {
 				Myprinter.printReciept(firstItem, secondItem, thirdItem, fourthItem, fifthItem); //calling the method from printer class
 			} //closes the main method
 		} //closes the class
-				
-			
-				
-				
+
 			
 		
 		
